@@ -65,8 +65,8 @@ class Robot:
         """
         parts = command.strip().split(",")
 
-        if len(parts) ==3 and parts[0].strip().split(" ")[0].lower() == "place" :
-            x, y, facing = parts[0].strip().split(" ")[1], parts[1].strip(), parts[2].strip()
+        if len(parts) ==3 and parts[0].strip().split()[0].lower() == "place" :
+            x, y, facing = parts[0].strip().split()[1], parts[1].strip(), parts[2].strip()
             if not x or not y or not facing:
                 return "Invalid command." 
             if  not x.isdigit() or not y.isdigit():
