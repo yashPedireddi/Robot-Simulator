@@ -1,5 +1,10 @@
 # Robot-Simulator
-Robot simulator
+The application is a simulation of a toy robot moving on a square tabletop, of
+dimensions 5 units x 5 units.
+There are no other obstructions on the table surface.
+The robot is free to roam around the surface of the table and is prevented
+from falling to destruction. Any movement that would result in the robot falling from
+the table is prevented.
 
 ### Code execution
 Code can be executed in two ways depending on the input format
@@ -22,4 +27,23 @@ Code can be executed in two ways depending on the input format
   3) Have added additional checks for the "PLACE" command which includes number checking, null value checking, and handles uneven spaces within the command. For e.g.
      "PLACE 0,0,NORTH", "PLACE  0, 0, NORTH", and "Place, 0,0,North" will be handled in a similar way.
   4) Inputs can be provided from both command line and text file.
+
+      | Function   | Description  |
+      |-----------|-----------|
+      | place | Places the robot within the constraints |
+      | move | Moves the robot in the facing direction by 1 unit |
+      | left | Turns the robot to the left |
+      | right | Turns the robot to the right |
+     | report | Reports the current coordinates if the robot is placed |
+     | execute_command | Checks if the command is valid and executes |
+
+   ### Examples
+   The following inputs in the command line will produce the output "Robot is currently at coordinate (3,3) facing NORTH."
+   ```sh
+   PLACE 1,2,EAST
+   MOVE
+   MOVE
+   LEFT
+   MOVE
+   REPORT
 
