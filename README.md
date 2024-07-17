@@ -8,7 +8,7 @@ the table is prevented.
 
 ### Code execution
 Before executing the code install the dependencies mentioned in requirements.txt. Code can be executed in two ways depending on the input format.
-1) For input directly in the command line type the following in cmd, you will prompted to enter the commands
+1) For input directly in the command line type the following in cmd, you will be prompted to enter the commands
    ```sh
    python robot.py
 
