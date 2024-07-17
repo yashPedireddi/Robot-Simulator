@@ -104,15 +104,8 @@ if __name__ == "__main__":
         print("Enter commands (type 'EXIT' to stop):")
         while True:
             line = input().strip().lower()
-
-            # UNCOMMENT/COMMENT BELOW 2 LINES OF CODE TO INTRODUCE/REMOVE EXIT COMMAND AND KEEP RUNNING THE PROCESS EVEN AFTER EXECUTING REPORT COMMAND
             if line.lower() == "exit":
                 break
-            # COMMENT/UNCOMMENT BELOW 4 LINE AND UNCOMMENT ABOVE 2 TO INTRODUCE/REMOVE EXIT COMMAND
-            # if line.lower() == "report":
-            #     output = robot.execute_command(line)
-            #     print(output)
-            #     break
             output = robot.execute_command(line)
             if output:
                 print(output)

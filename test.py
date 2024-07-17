@@ -59,10 +59,10 @@ def test_place_command(robot):
 
 def test_custom_commands(robot):
 
-    robot.execute_command("PLACE 1,2,EAST")
+    robot.execute_command("PLACE 0,4,NORTH")
     robot.execute_command("MOVE")
     robot.execute_command("MOVE")
     robot.execute_command("LEFT")
     robot.execute_command("MOVE")
 
-    assert robot.report() == "Robot is currently at coordinate (3,3) facing NORTH."
+    assert robot.report() == "Robot is currently at coordinate (0,4) facing WEST."
